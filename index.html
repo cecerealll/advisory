@@ -7,68 +7,85 @@
     <title>Cece Fan Project 2</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src='https://use.fontawesome.com/4900e091fd.js'></script>
+    <style>
+        a {
+            background: lightblue;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <!-- 1 HEADER -->
     <header class="wrapper">
-        <nav>
-            <ul>
-                <li><div><img src="assets/call.png" alt="phone icon"></div>+88 01912704287</li>
-                <li><div><img src="assets/mail.png" alt="email icon"></div>perfect_help@gmail.com</li>
-            </ul>
-
-            <ul>
-                <li><div><img src="assets/translate.png" alt="translate icon"></div>
-                    english 
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+        <section>
+            <div>
+                <div><a href="#"><div><img src="assets/call.png" alt="phone icon"></div>+88 01912704287</a></div>
+                <div><a href="#"><div><img src="assets/mail.png" alt="email icon"></div>perfect_help@gmail.com</a></div>
+            </div>
+    
+            <div>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="assets/translate.png" alt="translate icon">
+                        </div>
+                        english 
+                        <i class="fa fa-caret-down fa-fw" aria-hidden="true"></i>
+                    </a>
                 </li>
-                <li>about</li>
-                <li>claim & policy</li>
-                <li>register</li>
-            </ul>
-        </nav>
+                <li><a href="#">about</a></li>
+                <li><a href="#">claim & policy</a></li>
+                <li><a href="#">register</a></li>
+            </div>
+        </section>
+    
 
-        <div>
-            <div><img src="assets/logo.png" alt="advisory logo icon"></div>
-            <h1>advisor<span>y</span></h1>
-            <p>perfect business solution</p>
-        </div>
-        <div>
-            <div><img src="assets/world.png" alt="world icon"></div>
-            <h3>main office</h3>
-            <p>136 advice the good, <span>ca</span></p>
-        </div>
-        <div>
-            <div><img src="assets/time.png" alt="stopwatch logo"></div>
-            <h3>opening time</h3>
-            <p>mon-sat: 9.00 to 19.00</p>
-        </div>
-        <div>
-            <button>free consultation</button>
-        </div>
+        <section>
+            <div>
+                <div><a href="#"><img src="assets/logo.png" alt="advisory logo icon"></a></div>
+                <h1><a href="#">advisor<span>y</span></a></h1>
+                <p>perfect business solution</p>
+            </div>
+            <div>
+                <div><a href="#"><img src="assets/world.png" alt="world icon"></a></div>
+                <h3><a href="#">main office</a></h3>
+                <p>136 advice the good, <span>ca</span></p>
+            </div>
+            <div>
+                <div><a href="#"><img src="assets/time.png" alt="stopwatch logo"></a></div>
+                <h3><a href="#">opening time</a></h3>
+                <p>mon-sat: 9.00 to 19.00</p>
+            </div>
+            <div>
+                <button><a href="#">free consultation</a></button>
+            </div>
+        </section>
 
         <nav>
             <ul>
-                <li>home</li>
-                <li>about us</li>
-                <li>services</li>
-                <li>projects</li>
-                <li>blog</li>
-                <li>shop</li>
-                <li>contact</li>
-                <li><div><img src="assets/shop.png" alt=""><div class="circle">2</div></div></li>
-                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">blog</a href="#"></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
+            <ul>
+                <li><a href="#"><div><img src="assets/shop.png" alt=""><div class="circle">2</div></div></a></li>
+                <li><a href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i></a></li>
+            </ul>
+            
         </nav>
 
         <nav>
             <ul>
                 <!-- PARTIAL MIXIN -->
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
-                <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                <li><a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p fa-fw" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google fa-fw" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -78,11 +95,11 @@
         <section class="hero">
             <!-- arrow slider before after -->
             <!-- background img -->
-            <div class="overlay"></div>
-            <div class="">
-                <h1>advisory business consulting services</h1>
+            <!-- <div class="overlay"></div> -->
+            <div>
+                <h1><a href="#">advisory business consulting services</a></h1>
                 <p>we offer consulting expertize in the areas of turnaround management, receiverships, and loan restructuring. our services,through corporate renewal and recovery, enable a return to profitability.</p>
-                <button><i class="fa fa-long-arrow-right" aria-hidden="true"></i>meet our expert</button>
+                <button><a href="#"><i class="fa fa-long-arrow-right fa-fw" aria-hidden="true"></i>meet our expert</a></button>
             </div>
         </section>
 
@@ -92,11 +109,13 @@
             <div><img src="assets/bg-circle-1.png" alt="background eclipse asthetic"></div>
             <article>
                 <h3>we help</h3>
-                <h2>highly collaborative and personalized business transformation consulting</h2>
+                <h2><a href="#">highly collaborative and personalized business transformation consulting</a></h2>
                 <p>our approach includes facilitated workshops, individual interviews and teach review - all designed to faster close collaboration between your team and our business consultants, helping us to establish an in-depth understanding of your business and technology requirements as the foundation of our assessment process.</p>
                 <button>
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    read more
+                    <a href="#">
+                        <i class="fa fa-long-arrow-right fa-fw" aria-hidden="true"></i>
+                        read more
+                    </a>
                 </button>
             </article>
 
@@ -105,8 +124,8 @@
                 <p>helping you get the greatest strategic advantage from your data management environment.</p>
                 <p>we then work with key stakeholders to develop actionable recommendations along with design</p>
                 <div>
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    <p>free consultation</p>
+                    <i class="fa fa-long-arrow-right fa-fw" aria-hidden="true"></i>
+                    <button><a href="#">free consultation</a></button>
                 </div>
             </aside>
         </section>
@@ -149,9 +168,9 @@
                 <h3>B2B consulting</h3>
                 <p>B2B helping you get the greatest strategic advantage from your data management environment</p>
             </div>
-            
         </section>
 
+        <!-- 5 -->
         <section>
             <article>
                 <h2>why choosing advisory</h2>
@@ -179,9 +198,212 @@
                 </div>
             </section>
         </section>
-    </main>
-    <footer>
 
+        <!-- 6 -->
+        <section>
+            <div>
+                <div><img src="assets/vector.png" alt="vector icon"></div>
+                <h3>project successful</h3>
+                <p>2684</p>
+            </div>
+            <div>
+                <div><img src="assets/speaker.png" alt="speaker icon"></div>
+                <h3>experienced consultants</h3>
+                <p>3450</p>
+            </div>
+            <div>
+                <div><img src="assets/target.png" alt=""></div>
+                <h3>team members</h3>
+                <p>125</p>
+            </div>
+            <div>
+                <div><img src="assets/line-graph.png" alt="line graph logo"></div>
+                <h3>avg profit increased</h3>
+                <p>75%</p>
+            </div>
+        </section>
+
+        <!-- 7 -->
+        <section>
+            <!-- PARTIAL MIXIN -->
+            <h3>what we do</h3>
+            <h2>;atest Project</h2>
+            <!-- before after border -->
+            <!-- before after P -->
+            <p>we have done more than 10,000 projects in the short period time and all the projects are done by our expert team with 100% satisfaction</p>
+            <div>
+                <button><a href="#"><i class="fa fa-long-arrow-right fa-fw" aria-hidden="true"></i>more project</a></button>
+            </div>
+
+            <div><img src="assets/notebook.jpg" alt="image with a mac keyboard near the top and a mouce with 2 notebooks stacked nicely on top of eachother all on a white table"></div>
+            <div><img src="assets/plants.jpg" alt="image with a room full of green plants with books on a tall shelf on the left and a chair on the bottom right with a 6 pane window in sight"></div>
+            <div><img src="assets/gallery.jpg" alt="a girl with a taupe jacket and light beige backpack and black pants with her back turned to us looking 9 paintings in a gallery positioned in a grid fashion"></div>
+        </section>
+
+        <!-- 8 -->
+        <section>
+            <div><img src="assets/mahufuz.jpg" alt="portrait of mahufuz with windy hair smiling at us wearing a light thin denim shirt over a white t shirt with a green collar. There are people working with computers in the background"></div>
+            <p>our consultants, engineers and architects bring deep industry and technical knowledge to each engagement based on years of experience helping companies around the world adopt software and get strategic.</p>
+            <!-- BEFORE AFTER BORDER -->
+            <h4>mahufuz riad</h4>
+            <p>founder VP</p>
+            <!-- BEFORE AFTER SLIDER -->
+        </section>
+
+        <!-- 9 -->
+        <section>
+            <!-- PARTIAL MIXIN -->
+            <h3>from our blog</h3>
+            <h2>latest news</h2>
+            <!-- before after border -->
+            <!-- before after P -->
+            <p>our most popular rect blog post. we have done more than 10,000 projects in the short period of time and all of the projects are done</p>
+            <div>
+                
+                <button><a href="#"><i class="fa fa-long-arrow-right fa-fw" aria-hidden="true"></i>more news</a></button>
+            </div>
+            <article>
+                <div><img src="assets/link.png" alt="link icon"></div>
+                <div class="overlay"><img src="assets/computer-1.jpg" alt="one guy on left bottom corner looking up from his lap to talk to uneen coworker"></div>
+                <a href="#">
+                    <h3>consulting reports third quarter 2017 financial results</h3>
+                    <p>for the quarter, revenues of $449.0 million increased $10.9 million, or 2.5% .....</p>
+                    <p>november 06, 2017</p>
+                </a>
+            </article>
+            <article>
+                <div><img src="assets/link.png" alt=""></div>
+                <div class="overlay"><img src="assets/computer-2.jpg" alt="close up of mac desktop, a macbook in the distance"></div>
+                <a href="#">
+                    <h3>accounting, legal, engineering, dental, architectural ....</h3>
+                    <p>for the quarter, revenues of $449.0 million increased $10.9 million, or 2.5% .....</p>
+                    <p>november 06, 2017</p>
+                </a>
+            </article>
+            <article>
+                <div><img src="assets/link.png" alt=""></div>
+                <div class="overlay"><img src="assets/computer-3.jpg" alt="two people appears to be in discussion on a park bench doing work with a macbook"></div>
+                <a href="#">
+                    <h3>when a business can no longer meet the demands of its short/long term</h3>
+                    <p>for the quarter, revenues of $449.0 million increased $10.9 million, or 2.5%.....</p>
+                    <p>november 06, 2017</p>
+                </a>
+            </article>
+        </section>
+
+        <!-- 10 -->
+        <section>
+            <div><a href="#"><img src="assets/sponsor-1.png" alt="group m company sponsor"></a></div>
+            <div><a href="#"><img src="assets/sponsor-2.png" alt="oxfam company sponsor"></a></div>
+            <div><a href="#"><img src="assets/sponsor-3.png" alt="ANC a learn field company sponsor"></a></div>
+            <div><a href="#"><img src="assets/sponsor-4.png" alt="vmware company sponsor"></a></div>
+        </section>
+    </main>
+
+    <!-- 11 -->
+    <footer>
+        <div class="topfooter">
+            <div>
+                <a href="#">
+                    <div><img src="assets/mail.png" alt="mail icon"></div>
+                    <p>advisory@gmail.com</p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <div><img src="assets/call.png" alt="phone icon"></div>
+                    <p>+88 01912704287</p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <div><img src="assets/pin.png" alt="map pin icon"></div>
+                    <p>143, New York, NY 10018</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="mainfooter">
+            <div>
+                <a href="#">
+                    <div><img src="assets/logo.png" alt="advisory logo"></div>
+                    <h1>advisory</h1>
+                </a>
+                <p>perfect business solution</p>
+                <p>over 20 years of experience we'll ensure you always get the best guidance. we serve a clients at every level of their organization we can be most whether as a trusted advisor</p>
+                <h4>receive news right on your email</h4>
+                <input type="text" placeholder="Your Email">
+                <button><a href="#"><i class="fa fa-paper-plane-o fa-fw" aria-hidden="true"></i></a></button>
+            </div>
+            <nav>
+                <h3>our quick focus</h3>
+                <ul>
+                    <li><a href="#">business transformation</a></li>
+                    <li><a href="#">business growth</a></li>
+                    <li><a href="#">sustainability</a></li>
+                    <li><a href="#">performance</a></li>
+                    <li><a href="#">customer insights</a></li>
+                    <li><a href="#">B2B consulting</a></li>
+                    <li><a href="#">insurance connsulting</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h3>latest news</h3>
+                <article>
+                    <h4><a href="#">business processes are fundamental to every company</a></h4>
+                    <p>november 12, 2017</p>
+                </article>
+                <article>
+                    <h4><a href="#">business processes are fundamental to every company</a></h4>
+                    <p>november 12, 2017</p>
+                </article>
+                <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>
+                <p>get a quote</p>
+            </div>
+        </div>
+        
+        <div class="bottomfooter">
+            <p>copyright 2017, all rights reserved, 360degree</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pinterest-p fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-google fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dribbble fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-vine fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
