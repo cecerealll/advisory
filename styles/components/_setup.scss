@@ -3,12 +3,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-@mixin remCalc($fontSize) {
-    font-size: ($fontSize / 16) * 1rem; // nts: logic behind it: the base font in browswer is 16px divide pixel value by 16 and multiply by 1rem, value imported in remCalc will be calculated into rem value
+@function remCalc($fontSize) {
+    @return ($fontSize / 16) * 1rem; // nts: logic behind it: the base font in browswer is 16px divide pixel value by 16 and multiply by 1rem, value imported in remCalc will be calculated into rem value
 }
 
 body {
     font-size: 100%; // base font 16px
+    width: 100vw;
 }
 
 a {

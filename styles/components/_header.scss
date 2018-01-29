@@ -28,6 +28,9 @@
 
             .mail-icon {
                 margin-right: 17px;
+                + a {
+                    text-transform: initial;
+                }
             }
         } 
     }
@@ -88,7 +91,7 @@
             // margin-right: 100px;
 
             h1 {
-                @include remCalc(32);
+                font-size: remCalc(32);
                 font-weight: 700;
                 font-family: $heading-font;
                 margin-bottom: 15px;
@@ -99,6 +102,7 @@
             }
 
             h3 {
+                // @include $small-font18;
                 font-size: $small-font18;
                 font-family: $body-font;
                 margin-bottom: 21px;
@@ -124,7 +128,77 @@
         color: $primary-color;
         font-size: $small-font18;
         padding: 23px 27px;
+        // display: block;
+        
     }
 }
 
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $primary-color;
+    color: white;
 
+
+    .bottom-header-left {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        align-items: center;
+        padding: 30px 40px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-family: $body-font;
+            align-items: center;
+
+            :not(:last-child) {
+                font-size: $small-font18;
+            }
+
+            li:not(:last-child) {
+                margin-right: 15px;
+                // text-transform: capitalize;
+            }
+
+            .shopping-bag {
+                position: relative; 
+                .shoppinng-icon {
+                    width: 22px;
+                }
+                + li {
+                    font-size: $small-font18;
+                }
+            }
+            .shopping-bag:after {
+                content: "2";
+                position: absolute;
+                border: 1px solid #2d71cd;
+                background: #2d71cd;
+                border-radius: 50%;
+                font-size: remCalc(12);
+                color: white;
+                padding: 5px 8px;
+                // padding: 5px;
+                // width: 25px;
+                // height: 25px;
+                // display: inline-block;
+                bottom: -10px;
+                right: -10px;
+            }
+        }
+    }
+
+    .bottom-header-right {
+        display: flex;
+        width: 25%;
+        justify-content: space-between;
+        padding: 30px 40px;
+        // li {
+        //     margin-left: 15px;
+        // }
+    }
+}
