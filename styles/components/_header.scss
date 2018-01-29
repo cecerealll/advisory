@@ -1,11 +1,130 @@
+
 .top-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $body-font;
+    font-size: $small-font16;
+    text-transform: capitalize;
+    padding: 27px 0 23px 0;
+    background: $secondary-color;
+    // align-items: flex-end;
+
     .top-header-left{
         display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+        .inner {
+            align-items: flex-end;
+            
+            a {
+                margin-right: 65px;
+            }
+
+            .phone-icon {
+                margin-right: 30px;
+            }
+
+            .mail-icon {
+                margin-right: 17px;
+            }
+        } 
     }
     .top-header-right {
         display: flex;
         list-style: none;
+
+        .inner {
+            align-items: flex-end;
+            
+            .translate {
+                margin-right: 15px;
+                width: 19px;
+            }
+                
+            .down-arrow {
+                margin-left: 8px;
+                margin-right: 35px;
+            }
+        }
+        
+        ul {
+            display: flex;
+            align-items: flex-end;
+
+            li:not(.register) {
+                margin-right: 10px;
+            }
+        }
     }
 }
+
+.mid-header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 48px 0 40px 0;
+    // flex-direction: row;
+
+    div { 
+        display: flex;
+
+        .advisory {
+            margin-right: 134px;
+        }
+        .main-office {
+            margin-right: 45px;
+        }
+
+        > a {
+            width: 43px;
+            margin-right: 30px;
+        }
+
+        > div {
+            flex-direction: column;
+            justify-content: center;
+            // margin-right: 100px;
+
+            h1 {
+                @include remCalc(32);
+                font-weight: 700;
+                font-family: $heading-font;
+                margin-bottom: 15px;
+                // margin-right: 170px;
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            h3 {
+                font-size: $small-font18;
+                font-family: $body-font;
+                margin-bottom: 21px;
+                // margin-right: 30px;
+            }
+
+            p {
+                font-size: $small-font16;
+                font-family: $body-font;
+                color: $pfont-color;
+                // margin-left: 45px;
+            }
+        }
+    }
+    
+    button {
+        border: 1px solid $primary-color;
+        // width: 195px;
+        // height: 57px;
+        margin-left: 65px;
+        align-items: center;
+        text-transform: uppercase;
+        color: $primary-color;
+        font-size: $small-font18;
+        padding: 23px 27px;
+    }
+}
+
+
