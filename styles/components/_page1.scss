@@ -44,6 +44,7 @@
 
 .article-feature-section {
     background: url(../assets/bg-circle-1.png) top left no-repeat;
+    margin-bottom: 140px;
 
     h3 {
         color: $primary-color;
@@ -112,4 +113,49 @@
             }
         }
     }
+}
+
+// section 4 services
+.services {
+    background: $secondary-color url(../assets/bg-circle-2.png) bottom right no-repeat;
+    padding: 150px 0;
+    .subheading {
+        @include subtitle;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // justify-content: center;
+
+        > div {
+            width: 375px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            margin-bottom: 30px;
+            padding: 60px  40px;
+            
+
+            .srv-img {
+                width: 53px;
+                margin-bottom: 30px;
+                height: 50px;
+            }
+            
+            h3 {
+                font-size: $med-font22;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                
+            }
+            
+            p {
+                line-height: 1.7;
+                text-align: center;
+            }
+        }
+    }   
 }

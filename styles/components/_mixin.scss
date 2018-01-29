@@ -10,3 +10,54 @@
         color: white;
     }
 }
+
+@mixin subtitle {
+    display: flex;
+    flex-direction: column; // justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    // height: 200px;
+    position: relative;
+    margin-bottom: 90px; // margin: 0 auto;
+    h3 {
+        font-size: $med-font20;
+        font-family: $heading-font;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+        // margin-bottom: 100px;
+         // z-index: 10;
+        // left: 50%;
+        // transform: translateX(-50%);
+    }
+    h3:after {
+        content: "S"; // z-index: -1;
+        // font-weight: 700;
+        // transform: translateY(-50%);
+    }
+    h2 {
+        color: $primary-color;
+        font-size: $large-font50;
+        font-family: $heading-font;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+    }
+    h2:after {
+        content: url(../assets/line.png);
+        position: absolute; // width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 40px; // content: "S"
+    }
+    p {
+        position: absolute;
+        font-size: remCalc(250);
+        left: 50%;
+        transform: translateX(-50%);
+        top: -100px;
+        color: white;
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+}

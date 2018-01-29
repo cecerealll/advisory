@@ -356,7 +356,8 @@ img {
         margin-right: 5px; }
 
 .article-feature-section {
-  background: url(../assets/bg-circle-1.png) top left no-repeat; }
+  background: url(../assets/bg-circle-1.png) top left no-repeat;
+  margin-bottom: 140px; }
   .article-feature-section h3 {
     color: #2f87fd;
     font-family: "Playfair Display", serif;
@@ -417,6 +418,93 @@ img {
         text-transform: capitalize;
         font-size: 0.9375rem;
         word-spacing: 2px; }
+
+.services {
+  background: #f5f5f5 url(../assets/bg-circle-2.png) bottom right no-repeat;
+  padding: 150px 0; }
+  .services .subheading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 90px; }
+    .services .subheading h3 {
+      font-size: 1.125rem;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      position: relative;
+      z-index: 1; }
+    .services .subheading h3:after {
+      content: "S"; }
+    .services .subheading h2 {
+      color: #2f87fd;
+      font-size: 3rem;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      position: relative;
+      z-index: 2; }
+    .services .subheading h2:after {
+      content: url(../assets/line.png);
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin-top: 40px; }
+    .services .subheading p {
+      position: absolute;
+      font-size: 15.625rem;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: -100px;
+      color: white;
+      font-family: "Playfair Display", serif;
+      font-weight: 700; }
+  .services .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .services .content > div {
+      width: 375px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: white;
+      margin-bottom: 30px;
+      padding: 60px  40px; }
+      .services .content > div .srv-img {
+        width: 53px;
+        margin-bottom: 30px;
+        height: 50px; }
+      .services .content > div h3 {
+        font-size: 1.25rem;
+        text-transform: capitalize;
+        margin-bottom: 30px; }
+      .services .content > div p {
+        line-height: 1.7;
+        text-align: center; }
 
 footer {
   width: 100%; }
