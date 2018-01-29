@@ -6,7 +6,7 @@
     font-family: $body-font;
     font-size: $small-font16;
     text-transform: capitalize;
-    padding: 27px 0 23px 0;
+    padding: 25px 0 23px 0;
     background: $secondary-color;
     // align-items: flex-end;
 
@@ -17,9 +17,17 @@
         
         .inner {
             align-items: flex-end;
+
+            // .english {
+            //     // margin-right: 0;
+            //     // width: auto;
+            //     display: flex;
+            //     flex-direction: row;
+                
+            // }
             
             a {
-                margin-right: 65px;
+                margin-right: 55px;
             }
 
             .phone-icon {
@@ -27,7 +35,7 @@
             }
 
             .mail-icon {
-                margin-right: 17px;
+                margin-right: 27px;
                 + a {
                     text-transform: initial;
                 }
@@ -46,9 +54,14 @@
                 width: 19px;
             }
                 
-            .down-arrow {
+            .down-arrow a {
+                display: flex;
                 margin-left: 8px;
                 margin-right: 35px;
+            }
+
+            .down-arrow p {
+                margin-right: 10px;
             }
         }
         
@@ -67,7 +80,7 @@
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
-    padding: 48px 0 40px 0;
+    padding: 35px 0 30px 0;
     // flex-direction: row;
 
     div { 
@@ -146,7 +159,8 @@
         justify-content: space-between;
         width: 75%;
         align-items: center;
-        padding: 30px 40px;
+        padding: 25px 30px;
+        border-right: 1px solid #5499f7;
 
         ul {
             display: flex;
@@ -196,7 +210,7 @@
         display: flex;
         width: 25%;
         justify-content: space-between;
-        padding: 30px 40px;
+        padding: 25px 30px;
         // li {
         //     margin-left: 15px;
         // }

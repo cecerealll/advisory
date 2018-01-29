@@ -7,12 +7,12 @@ $secondary-footer: #313030;
 $pfont-color : rgba(0, 0, 0, 0.7);
 
 // Font size
-$small-font16: remCalc(16);
-$small-font18: remCalc(18);
-$med-font20: remCalc(20);
-$med-font20: remCalc(22);
-$larg-font: remCalc(45);
-$larg-font: remCalc(50);
+$small-font16: remCalc(14);
+$small-font18: remCalc(15);
+$med-font20: remCalc(18);
+$med-font22: remCalc(20);
+$large-font45: remCalc(43);
+$large-font50: remCalc(48);
 
 
 // Font family
@@ -20,7 +20,7 @@ $heading-font: 'Playfair Display', serif;
 $subheading-font: 'Poppins', sans-serif;
 $body-font: 'Source Sans Pro', sans-serif; 
 
-
+$blueborder: 1px $primary-color solid;
 //
 // font-family: 'Playfair Display', serif;
 // font-family: 'Poppins', sans-serif;

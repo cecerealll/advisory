@@ -1,0 +1,12 @@
+@mixin bluebutton {
+    // width: 200px;
+    padding: 12px 18px;
+    background: $primary-color; // height: 40px;
+    outline: none;
+    border: 0;
+    text-transform: capitalize;
+    font-size: $small-font18;
+    a {
+        color: white;
+    }
+}

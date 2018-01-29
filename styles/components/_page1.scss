@@ -1,0 +1,115 @@
+// seciton 2-4
+// section 2 Hero
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/bg-hero.jpg) center no-repeat;
+    width: 100vw;
+    color: white;
+    margin-bottom: 100px;
+
+    .hero-content {
+        padding: 160px 0 140px 0;
+        text-transform: capitalize;
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-size: remCalc(72);
+            font-family: $heading-font;
+            width: 58%;
+            margin-bottom: 45px;
+        }
+
+        p {
+            font-size: $small-font18;
+            width: 72%;
+            line-height: 1.6;
+            margin-bottom: 55px;
+            font-family: $body-font;
+        } 
+
+        button {
+            @include bluebutton;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+// section 3 article feature
+
+.article-feature-section {
+    background: url(../assets/bg-circle-1.png) top left no-repeat;
+
+    h3 {
+        color: $primary-color;
+        font-family: $heading-font;
+        font-size: $med-font20;
+        margin-bottom: 40px;
+    }
+    .article-feature-container {
+        display: flex;
+        justify-content: space-between;
+
+        article {
+            margin-right: 60px;
+            position: relative;
+            
+            h2 {
+                font-size: $large-font45;
+                font-family: $heading-font;
+                margin-bottom: 60px;
+
+            }
+            p {
+                font-family: $body-font;
+                font-size: $small-font16;
+                line-height: 1.7;
+                margin-bottom: 60px;
+            }
+            
+            button {
+                @include bluebutton;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        aside {
+            background: $secondary-color;
+            padding: 35px 25px 0 25px;
+            border-right: $blueborder;
+            h4 {
+                font-family: $heading-font;
+                font-size: $small-font18;
+                margin-bottom: 50px;
+                text-transform: capitalize;
+            }
+            p {
+                font-family: $body-font;
+                line-height: 1.7;
+                font-size: $small-font16;;
+                margin-bottom: 30px;
+            }
+
+            button {
+                margin-bottom: 50px;
+                margin-top: 20px;
+                border: none;
+                background: $secondary-color;
+            }
+
+            button a {
+                color: $primary-color;
+                text-transform: capitalize;
+                font-size: $small-font18;
+                word-spacing: 2px;
+            }
+        }
+    }
+}
