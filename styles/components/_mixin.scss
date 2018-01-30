@@ -1,3 +1,17 @@
+@mixin heading {
+    font-size: $large-font45;
+    font-family: $heading-font;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+@mixin body {
+    font-size: $small-font16;
+    line-height: 2;
+    color: $pfont-color;
+    font-family: $body-font;
+}
+
 @mixin bluebutton {
     // width: 200px;
     padding: 12px 18px;
@@ -11,53 +25,52 @@
     }
 }
 
-@mixin subtitle {
+@mixin title {
     display: flex;
     flex-direction: column; // justify-content: center;
     align-items: center;
     text-transform: capitalize;
     // height: 200px;
     position: relative;
-    margin-bottom: 90px; // margin: 0 auto;
+    margin-bottom: 100px; // margin: 0 auto;
     h3 {
         font-size: $med-font20;
         font-family: $heading-font;
         font-weight: 700;
         position: relative;
         z-index: 1;
-        // margin-bottom: 100px;
-         // z-index: 10;
-        // left: 50%;
-        // transform: translateX(-50%);
-    }
-    h3:after {
-        content: "S"; // z-index: -1;
-        // font-weight: 700;
-        // transform: translateY(-50%);
     }
     h2 {
         color: $primary-color;
-        font-size: $large-font50;
-        font-family: $heading-font;
-        font-weight: 700;
+        @include heading;
         position: relative;
         z-index: 2;
     }
     h2:after {
         content: url(../assets/line.png);
-        position: absolute; // width: 50%;
+        position: absolute; 
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 40px; // content: "S"
+        margin-top: 40px;
     }
     p {
         position: absolute;
         font-size: remCalc(250);
         left: 50%;
         transform: translateX(-50%);
-        top: -100px;
+        top: -70px;
         color: white;
         font-family: $heading-font;
         font-weight: 700;
     }
+}
+
+@mixin footertitle {
+    color: white;
+    font-family: $subheading-font;
+    font-size: $small-font18;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 60px;
 }

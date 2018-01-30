@@ -1,3 +1,186 @@
 footer {
-    width: 100%;
+    position: relative;
+    background: $primary-footer;
+}
+
+// top footer
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    background: $secondary-footer;
+    padding: 35px 40px;
+    box-shadow: 0px 24px 0px -7px #424141;
+    .top-footer-block {
+        display: flex;
+        color: white;
+        align-items: center;
+        font-family: $subheading-font;
+    }
+    p {
+        margin-left: 20px;
+    }
+}
+
+// main footer
+.main-footer {
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    .footer-col {
+        width: 30%;
+    }
+    .footer-col1 {
+        margin-right: 150px;
+        .advisory {
+            display: flex;
+            margin-bottom: 64px;
+            // justify-content: space-between;
+            // width: 43px;
+            > a {
+                width: 43px;
+                margin-right: 26px;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                text-transform: capitalize;
+                h1 a {
+                    font-family: $heading-font;
+                    color: white;
+                    font-size: remCalc(32);
+                    margin-bottom: 15px;
+                }
+                h1 a span {
+                    color: $primary-color;
+                }
+                p {
+                    color: rgba(159, 159, 159, 0.7);
+                    font-size: $small-font16;
+                    font-family: $body-font;
+                }
+            }
+        }
+        .footer-content {
+            @include body;
+            color: $ffont-color;
+            margin-bottom: 84px;
+        }
+        h4 {
+            color: $primary-color;
+            margin-bottom: 30px;
+            font-size: remCalc(15);
+        }
+       
+        form {   
+            position: relative;
+            input {
+                background: #313030;
+                border: 1px $primary-color solid;
+                width: 300px;
+
+                padding: 16px 18px;
+                font-size: $small-font16;
+                color: white;
+                height: 59px;
+                // float: left;
+                font-family: $subheading-font;
+                // outline: $primary-color;
+            }
+            button {
+                // width: 90px;
+                padding: 18px 36px;
+                border-radius: 20px;
+                font-size: remCalc(18);
+                background: $primary-color;
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: white;
+                border: 0;
+                min-height: 59px;
+            }
+        }
+    }
+    .footer-col2 {
+        width: 25%;
+        h3 {
+            @include footertitle;
+        }
+        ul  li a {
+            @include body;
+            color: $ffont-color;
+            text-transform: capitalize;
+        }
+    }
+
+    .footer-col3 {
+        h3 {
+            @include footertitle;
+        }
+        article {
+            h4 a {
+                color: $primary-color;
+                line-height: 2;
+                font-size: $small-font16;
+                font-family: $subheading-font;
+                margin-bottom: 23px;
+            }
+            
+            p {
+                font-family: $body-font;
+                color: #545454;
+                font-size: $small-font16;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+            }
+        }
+        .border {
+            border-bottom: 1px solid #363434;
+            margin-bottom: 40px;
+        }
+        .quote {
+            display: flex;
+            padding-top: 30px;
+            margin-bottom: 98px;
+            a {
+                text-transform: capitalize;
+                font-family: $subheading-font;
+                color: $primary-color;
+                i {
+                    color: white;
+                    margin-right: 17px;
+                }
+            }
+        }
+    }
+}
+
+.footer-border {
+    border-bottom: 1px solid #363434;
+}
+
+// bottom footer
+.bottom-footer {
+    display: flex;
+    padding: 57px 0;
+    justify-content: space-between;
+    text-transform: capitalize;
+    p {
+        color: #949292;
+        font-family: $body-font;
+    }
+    nav ul {
+        display: flex;
+        li {
+            margin-left: 10px;
+            i {
+                color: #757575;
+                font-size: remCalc(17);
+            }
+        }
+    }
 }

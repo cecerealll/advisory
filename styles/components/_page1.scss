@@ -61,16 +61,17 @@
             position: relative;
             
             h2 {
+                @include heading;
                 font-size: $large-font45;
-                font-family: $heading-font;
                 margin-bottom: 60px;
+                width: 95%;
+                line-height: 1.4;
 
             }
             p {
-                font-family: $body-font;
-                font-size: $small-font16;
-                line-height: 1.7;
+                @include body;
                 margin-bottom: 60px;
+                width: 75%;
             }
             
             button {
@@ -92,9 +93,7 @@
                 text-transform: capitalize;
             }
             p {
-                font-family: $body-font;
-                line-height: 1.7;
-                font-size: $small-font16;;
+                @include body;
                 margin-bottom: 30px;
             }
 
@@ -119,8 +118,8 @@
 .services {
     background: $secondary-color url(../assets/bg-circle-2.png) bottom right no-repeat;
     padding: 150px 0;
-    .subheading {
-        @include subtitle;
+    .srv-subheading {
+        @include title;
     }
 
     .content {
@@ -136,7 +135,7 @@
             align-items: center;
             background: white;
             margin-bottom: 30px;
-            padding: 60px  40px;
+            padding: 60px  48px;
             
 
             .srv-img {
@@ -153,7 +152,7 @@
             }
             
             p {
-                line-height: 1.7;
+                @include body;
                 text-align: center;
             }
         }

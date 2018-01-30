@@ -1,0 +1,174 @@
+// section 7-10
+
+// section 7 testimonial
+.testimonial {
+    background: $primary-color;
+    .testimonial-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        .testimonial-img {
+            width: 34%;
+            img {
+                min-height: 100%;
+            }
+        }
+        .testimonial-txt {
+            width: 58%;
+            color: white;
+            text-align: center;
+            position: relative;
+            // margin-bottom: 20px;
+            p {
+                font-size: $med-font22;
+                line-height: 1.7;
+                margin-bottom: 77px;
+            }
+            .border {
+                border-bottom: 1px solid white;
+                width: 80px;
+                margin: 0 auto;
+                margin-bottom: 38px;
+            }
+            h4 {
+                font-size: $med-font22;
+                text-transform: capitalize;
+                font-family: $subheading-font;
+                margin-bottom: 25px;
+
+            }
+            h5 {
+                @include body;
+                color: #eae8e8;
+                text-transform: capitalize;
+                // margin-bottom: 20px;
+            }
+            .slider {
+                display: flex;
+                width: 20%;
+                justify-content: space-between;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -40px;
+                // margin-top: 20px;
+            }
+
+            .slider .tictac {
+                background : #347ad8;
+                border-radius: 25px;
+                // color : #347ad8;
+                width: 31%;
+                // font-size: remCalc(12);
+                height: 20px;
+                // top: -20px;
+            }
+        }
+    }
+}
+
+// section 9
+.news {
+    padding-top: 150px;
+    .news-subheading {
+        @include title;
+        p {
+            color: $secondary-color;
+        }
+    }
+    .news-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+        // align-items: center;
+
+        p {
+        font-size: $med-font20;
+        line-height: 1.7;
+        font-family: $subheading-font;
+        width: 75%;
+        // float: left;
+        }
+        .content-button {
+            button {
+                border: 0;
+            }
+            // width: 11%;
+            button a {
+                color: $primary-color;
+                font-size: $small-font16;
+                text-transform: capitalize;
+                line-height: 1.7;
+                font-weight: 500;
+                // margin-left: 10px;
+            }
+            button a i {
+                margin-right: 15px;
+            }
+        }
+    } 
+    .news-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 130px;
+        article {
+            width: 31%;
+            a {
+                h3 {
+                    font-family: $subheading-font;
+                    font-size: $small-font18;
+                    line-height: 1.7;
+                    color: $primary-color;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    margin-bottom: 35px;
+                    // @include body;
+                }
+                > p {
+                    @include body;
+                    margin-bottom: 25px;
+                }
+                .date {
+                    font-family: $body-font;
+                    font-size: $small-font16;
+                    color: $primary-color;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        // position: relative;
+        .news-img {
+            position: relative;
+            margin-bottom: 50px;
+            .overlay {
+                background: rgba(47, 135, 253, 0.9) url(../assets/link.png) center no-repeat;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                top: 0;
+                display: none;
+            }
+        }
+    }
+}
+
+// section 10 sponsor
+.sponsor {
+    background: $primary-color;
+    .sponsor-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 90px 0 115px 0; 
+        a {
+            // width: 20%; 
+            // min-width: 220px;
+            img {
+                width: auto;
+            }
+        }
+    }
+}
+
+
