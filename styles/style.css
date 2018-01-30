@@ -332,6 +332,7 @@ img {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/bg-hero.jpg) center no-repeat;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/bg-hero.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/bg-hero.jpg) center no-repeat;
+  background-size: cover;
   width: 100%;
   color: white;
   margin-bottom: 100px; }
