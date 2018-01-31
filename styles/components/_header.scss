@@ -206,9 +206,16 @@
     @media (max-width: 480px) {
         div {
             width: 100%;
+            // margin-bottom: 10px;
+        }
+        .advisory {
+            margin-bottom: 20px;
         }
         .main-office, .opening-time {
             width: 50%;// float: left;
+            h3 {
+                margin-bottom: 5px;
+            }
         }
         div button {
             position: absolute;
@@ -242,8 +249,43 @@
         }
         @media (max-width: 768px) {
             ul li {
-                // margin-right: 10px;
                 font-size: remCalc(14);
+            }
+        }
+        @media (max-width: 480px) {
+            .hamburger {
+                display: block;
+            }
+            .exit {
+                display: block;
+            }
+            .hidden {
+                display: none;
+            }
+            .overlay.hamburger-sm {
+                display: block;
+                position: fixed;
+                height: inherit;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.8);
+                color: white !important;
+                padding: 30% 0;
+                margin: 0;
+                z-index: 9999;
+                li {
+                    margin: 10px auto;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                li a {
+                    color: white;
+                }
+            }
+            .fa-bars {
+                color: white;
             }
         }
 
@@ -301,6 +343,10 @@
         padding: 25px 30px;
         @media (max-width: 940px) {
             padding: 15px 20px;
+        }
+        @media (max-width: 480px) {
+            padding: 5px;
+            width: 40%;
         }
     }
 }

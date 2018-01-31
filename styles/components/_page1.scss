@@ -80,9 +80,30 @@
                 margin-bottom: 30px;
             }
         }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: remCalc(32);
+            }
+            p {
+                font-size: $small-font16;
+            }
+        }
     }
     @media (max-width: 940px) {
         margin-bottom: 50px;
+    }
+    @media (max-width: 480px) {
+        .hero-content {
+            padding: 30px 0 80px 0;
+        }
+        .fa-angle-left {
+           top: 79%;
+           left: 20%;
+        }
+        .fa-angle-right {
+            top: 79%;
+            right: 20%;
+        }
     }
 }
 

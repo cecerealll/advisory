@@ -34,9 +34,17 @@ button {
     max-width: 1170px;
     margin: 0 auto;
     width: 80%;
+    .hamburger {
+        display: none;
+    }
+
+    .exit {
+        display: none;
+    }
     @media (max-width: 940px) {
         width: 100%;
     }
+
     
 }
 
