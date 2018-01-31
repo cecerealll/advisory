@@ -31,15 +31,6 @@
         
         .inner {
             align-items: flex-end;
-
-            // .english {
-            //     // margin-right: 0;
-            //     // width: auto;
-            //     display: flex;
-            //     flex-direction: row;
-                
-            // }
-            
             a {
                 margin-right: 55px;
                 @media (max-width: 940px) {
@@ -185,8 +176,15 @@
         // display: block;
         a{
             color: $primary-color;
+        }      
+    }
+    @media (max-width: 768px) {
+        div > a {
+            margin-right: 10px;
         }
-        
+        button {
+            margin-left: 20px;
+        }
     }
 }
 
@@ -210,6 +208,12 @@
         @media (max-width: 940px) {
             padding: 15px 20px;
         }
+        @media (max-width: 768px) {
+            ul li {
+                // margin-right: 10px;
+                font-size: remCalc(14);
+            }
+        }
 
         ul {
             display: flex;
@@ -218,9 +222,9 @@
             font-family: $body-font;
             align-items: center;
 
-            :not(:last-child) {
-                font-size: $small-font18;
-            }
+            // :not(:last-child) {
+            //     font-size: $small-font18;
+            // }
 
             li:not(:last-child) {
                 margin-right: 30px;
@@ -266,8 +270,5 @@
         @media (max-width: 940px) {
             padding: 15px 20px;
         }
-        // li {
-        //     margin-left: 15px;
-        // }
     }
 }
