@@ -698,7 +698,8 @@ button {
         -ms-flex-direction: column;
         flex-direction: column; }
         .article-feature-section .article-feature-container aside {
-          width: 100%; }
+          width: 100%;
+          text-align: right; }
           .article-feature-section .article-feature-container aside button {
             margin-bottom: 20px; } }
   @media (max-width: 940px) {
@@ -917,6 +918,25 @@ button {
     @media (max-width: 768px) {
       .why-choose article {
         margin-bottom: 30px; } }
+    @media (max-width: 480px) {
+      .why-choose article {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .why-choose article .why-content {
+          width: 100%;
+          text-align: center; }
+          .why-choose article .why-content h2:after {
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+          .why-choose article .why-content p {
+            margin-bottom: 20px; } }
   .why-choose section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -974,6 +994,14 @@ button {
             margin-bottom: 20px; }
           .why-choose section .why-block p {
             text-align: center; } }
+    @media (max-width: 480px) {
+      .why-choose section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .why-choose section .why-block {
+          width: 100%; } }
   @media (max-width: 940px) {
     .why-choose {
       margin-top: 100px;
@@ -1148,6 +1176,16 @@ button {
         margin-bottom: 50px; }
         .project .project-content p {
           font-size: 1.125rem; } }
+    @media (max-width: 480px) {
+      .project .project-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px; }
+        .project .project-content p {
+          width: 100%; } }
   .project .project-block {
     display: -webkit-box;
     display: -ms-flexbox;
