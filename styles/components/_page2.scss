@@ -56,6 +56,9 @@
        @media (max-width: 940px) {
            margin-bottom: 60px;
        }
+       @media (max-width: 768px) {
+           margin-bottom: 30px;
+       }
        
     }
     
@@ -86,18 +89,23 @@
                     font-size: $small-font18;
                     color: black;
                     text-transform: capitalize;
-                    // &:hover {
-                    //     color: $primary-color;
-                    // }
                 }
                 .why-img {
                     width: 37px;
                     margin-right: 20px;
                 }
             }
-            
             p {
                 @include body;
+            }
+            @media (max-width: 940px) {
+                padding: 20px 15px;
+                > div {
+                    margin-bottom: 20px;
+                }
+                p {
+                    text-align: center;
+                }
             }
         }
     }
@@ -106,11 +114,16 @@
         margin-bottom: 100px;
         padding: 0 20px;
     }
+    @media (max-width: 768px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
 // section 6
 .history {
     display: flex;
+    flex-wrap: wrap;
     background : #1f2329;
     padding: 0 6%;
     .history-block {
@@ -139,6 +152,37 @@
     .last {
         border: 0;
     }
+    @media (max-width: 940px) {
+        padding: 0;
+        .history-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // width: 50%;
+            padding: 30px 20px;
+            > div {
+                margin-bottom: 20px;
+            }
+            h3 {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: remCalc(32);
+            }
+            // border: 1px #2d3d50 solid;
+        }
+    }
+    @media (max-width: 768px) {
+        .history-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding: 40px 30px;
+            border: 1px #2d3d50 solid;
+        }
+
+    }
 }
 
 // section 7
@@ -166,6 +210,7 @@
         .content-button {
             button {
                 border: 0;
+                background: white;
             }
             // width: 11%;
             button a {
@@ -174,10 +219,17 @@
                 text-transform: capitalize;
                 line-height: 1.7;
                 font-weight: 500;
+                // background: white;
                 // margin-left: 10px;
             }
             button a i {
                 margin-right: 15px;
+            }
+        }
+        @media (max-width: 940px) {
+            margin-bottom: 50px;
+            p {
+                font-size: $small-font18;
             }
         }
     }
@@ -188,6 +240,12 @@
         // width: 31%;
         > div {
             width: 32%;
+        }
+    }
+    @media (max-width: 940px) {
+        padding: 90px 20px 0;
+        .project-block {
+            margin-bottom: 100px;
         }
     }
 }
