@@ -643,6 +643,9 @@ button {
           margin-bottom: 15px; }
         .article-feature-section .article-feature-container article p {
           margin-bottom: 15px; } }
+      @media (max-width: 480px) {
+        .article-feature-section .article-feature-container article {
+          margin-bottom: 20px; } }
     .article-feature-section .article-feature-container aside {
       background: #f5f5f5;
       padding: 35px 25px 0 25px;
@@ -688,10 +691,23 @@ button {
       @media (max-width: 768px) {
         .article-feature-section .article-feature-container aside {
           width: 150%; } }
+    @media (max-width: 480px) {
+      .article-feature-section .article-feature-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .article-feature-section .article-feature-container aside {
+          width: 100%; }
+          .article-feature-section .article-feature-container aside button {
+            margin-bottom: 20px; } }
   @media (max-width: 940px) {
     .article-feature-section {
       margin-bottom: 80px;
       padding: 0 20px; } }
+  @media (max-width: 480px) {
+    .article-feature-section {
+      margin-bottom: 50px; } }
 
 .services {
   background: #f5f5f5 url(../assets/bg-circle-2.png) bottom right no-repeat;
@@ -823,6 +839,9 @@ button {
         .services .content > div h3 {
           margin-bottom: 15px;
           font-size: 1.125rem; } }
+    @media (max-width: 480px) {
+      .services .content > div {
+        width: 47%; } }
   @media (max-width: 940px) {
     .services {
       padding: 50px 20px; } }
