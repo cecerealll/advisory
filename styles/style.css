@@ -169,6 +169,17 @@ button {
       -ms-flex-align: end;
       align-items: flex-end;
       padding: 15px 20px; } }
+  @media (max-width: 480px) {
+    .top-header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px 0; } }
   .top-header a {
     color: rgba(0, 0, 0, 0.7); }
   .top-header .top-header-left {
@@ -204,6 +215,9 @@ button {
             width: 25px; } }
         .top-header .top-header-left .inner .mail-icon + a {
           text-transform: initial; }
+      @media (max-width: 480px) {
+        .top-header .top-header-left .inner {
+          font-size: 0.875rem; } }
   .top-header .top-header-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -243,6 +257,9 @@ button {
         border-bottom: 1px solid #2f87fd; }
       .top-header .top-header-right ul li:not(.register) {
         margin-right: 10px; }
+    @media (max-width: 480px) {
+      .top-header .top-header-right ul li {
+        font-size: 0.875rem; } }
 
 .mid-header {
   display: -webkit-box;
@@ -251,8 +268,11 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   text-transform: capitalize;
-  padding: 35px 0 30px 0; }
+  padding: 35px 0 30px 0;
+  position: relative; }
   @media (max-width: 940px) {
     .mid-header {
       padding: 25px 20px 20px 20px; } }
@@ -290,7 +310,7 @@ button {
         font-size: 1rem;
         font-family: "Source Sans Pro", sans-serif;
         color: rgba(0, 0, 0, 0.7); }
-  .mid-header button {
+  .mid-header div button {
     border: 1px solid #2f87fd;
     background: white;
     margin-left: 65px;
@@ -300,13 +320,24 @@ button {
     text-transform: uppercase;
     font-size: 1.125rem;
     padding: 23px 27px; }
-    .mid-header button a {
+    .mid-header div button a {
       color: #2f87fd; }
   @media (max-width: 768px) {
     .mid-header div > a {
       margin-right: 10px; }
     .mid-header button {
       margin-left: 20px; } }
+  @media (max-width: 480px) {
+    .mid-header div {
+      width: 100%; }
+    .mid-header .main-office, .mid-header .opening-time {
+      width: 50%; }
+    .mid-header div button {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      padding: 10px 15px;
+      font-size: 1rem; } }
 
 .bottom-header {
   display: -webkit-box;

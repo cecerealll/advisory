@@ -1,5 +1,8 @@
 .header-container {
     background: $secondary-color;
+    // @media (max-width: 480px) {
+    //     width: 100%;
+    // }
 }
 
 .top-header {
@@ -16,8 +19,11 @@
         align-items: flex-end;
         padding: 15px 20px;
     }
-    @media (max-width: 768px) {
-
+    @media (max-width: 480px) {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 10px 0;
     }
 
 
@@ -55,6 +61,9 @@
                 + a {
                     text-transform: initial;
                 }
+            }
+            @media (max-width: 480px) {
+                font-size: remCalc(14);
             }
         } 
     }
@@ -103,14 +112,21 @@
                 margin-right: 10px;
             }
         }
+        @media (max-width: 480px) {
+            ul li {
+                font-size: remCalc(14);
+            }
+        }
     }
 }
 
 .mid-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-transform: capitalize;
     padding: 35px 0 30px 0;
+    position: relative;
     @media (max-width: 940px) {
         padding: 25px 20px 20px 20px;
     }
@@ -118,6 +134,7 @@
 
     div { 
         display: flex;
+        // position: relative;
 
         .advisory {
             margin-right: 134px;
@@ -163,7 +180,7 @@
         }
     }
     
-    button {
+    div button {
         border: 1px solid $primary-color;
         background: white;
         // width: 195px;
@@ -184,6 +201,21 @@
         }
         button {
             margin-left: 20px;
+        }
+    }
+    @media (max-width: 480px) {
+        div {
+            width: 100%;
+        }
+        .main-office, .opening-time {
+            width: 50%;// float: left;
+        }
+        div button {
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            padding: 10px 15px;
+            font-size: $small-font16;
         }
     }
 }
