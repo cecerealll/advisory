@@ -3,6 +3,12 @@
     font-family: $heading-font;
     font-weight: 700;
     text-transform: capitalize;
+    @media (max-width: 940px) {
+        font-size: remCalc(40);
+    }
+    @media (max-width: 768px) {
+        font-size: remCalc(30);
+    }
 }
 
 @mixin body {
@@ -10,6 +16,13 @@
     line-height: 2;
     color: $pfont-color;
     font-family: $body-font;
+    @media (max-width: 940px) {
+        line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+        line-height: 1.5;
+        font-size: remCalc(14);
+    }
 }
 
 @mixin bluebutton {
@@ -22,6 +35,10 @@
     font-size: $small-font18;
     a {
         color: white;
+    }
+    @media (max-width: 768px) {
+        padding: 6px 9px;
+        font-size: $small-font16;
     }
 }
 
@@ -62,6 +79,23 @@
         color: white;
         font-family: $heading-font;
         font-weight: 700;
+    }
+    @media (max-width: 940px) {
+        margin-bottom: 110px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 70px;
+        h3 {
+            font-size: $small-font18;
+            margin-bottom: 10px;
+        }
+        h2:after {
+            margin-top: 30px;
+        }
+        p {
+            // top: -90px;
+            font-size: remCalc(200);
+        }
     }
 }
 

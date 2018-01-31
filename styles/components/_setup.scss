@@ -27,10 +27,16 @@ img {
     width: 100%;
 }
 
+button {
+    cursor: pointer;
+}
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
     width: 80%;
+    @media (max-width: 940px) {
+        width: 100%;
+    }
     
 }
 
